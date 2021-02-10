@@ -20,3 +20,6 @@ steps:
   displayName: 'dotnet Test $(buildConfiguration)'
 
 - script: dotnet publish --configuration $(buildConfiguration)
+  displayName: 'dotnet Test $(buildConfiguration)'
+  workingDirectory: -o $(Build.ArtifactStagingDirectory)/Output
+
