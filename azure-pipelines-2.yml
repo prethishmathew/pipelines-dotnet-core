@@ -21,5 +21,4 @@ steps:
 
 - script: dotnet publish --configuration $(buildConfiguration)
   displayName: 'dotnet Test $(buildConfiguration)'
-  workingDirectory: $(Build.ArtifactStagingDirectory)/Output
-
+ y)
