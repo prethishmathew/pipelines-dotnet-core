@@ -18,3 +18,5 @@ steps:
 
 - script: dotnet test
   displayName: 'dotnet Test $(buildConfiguration)'
+
+- script: dotnet publish --configuration $(buildConfiguration)
