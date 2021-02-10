@@ -21,4 +21,4 @@ steps:
 
 - script: dotnet publish --configuration $(buildConfiguration)
   displayName: 'dotnet Test $(buildConfiguration)'
- y)
+
