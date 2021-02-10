@@ -15,7 +15,8 @@ variables:
 
 steps:
 
-- task: DotNetCoreCLI@1
+- task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
-    command: 'build'
-    arguments: $(buildConfiguration)
+    command: restore
+    projects: '**/*.csproj'
